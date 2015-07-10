@@ -7,7 +7,7 @@ function computerThink(){
 			alert("You Got Diamond");
 }
 
-// asdnbiygrfuoiqpwmeg9u1noi3pg8h9ui31nipt9-gyir80ugewhub12ru0uewgfbhfe9-i
+
 	else if(computerChoice > 31){
 		computerChoice = Nothing;
 		nothingPoint++;	
