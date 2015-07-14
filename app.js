@@ -12,11 +12,21 @@ var computerChoice;
 
 var start = new Date();
 
-setInterval(function() {
-    $('#Timer').text((new Date() - start) / 1000 + " Seconds");
-}, 1000);
-	//Trying to change the timer to no decimal places//
+var count=30;
 
+var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+function timer()
+{
+  count=count-1;
+  if (count <= 0)
+  {
+     clearInterval(counter);
+     //counter ended, do something here
+     return;
+  }
+
+	$("#Timer").text(count);
+}
 $("#zane").click(function(){
 	computerChoice = Math.floor(Math.random()*100);
 	if(computerChoice < 5){
