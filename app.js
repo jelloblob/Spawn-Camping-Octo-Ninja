@@ -13,6 +13,7 @@ var computerChoice;
 var start = new Date();
 
 var count=30;
+// The count starts here
 
 var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
 function timer()
@@ -20,6 +21,8 @@ function timer()
   count=count-1;
   if (count <= 0)
   {
+  	location.reload();
+  	// Every 1000 it heads down by one
      clearInterval(counter);
      //counter ended, do something here
      return;
