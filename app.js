@@ -32,6 +32,7 @@ $("#zane").click(function(){
 	if(computerChoice < 5){
 		computerChoice = "Diamond";
 			$('#received').text("You got Diamond");
+			
 			score = diamondPoint + score;
 			$('#Score').text('Your Score ' + score);
 	}
