@@ -31,6 +31,9 @@ function timer()
 	$("#Timer").text(count);
 }
 $("#zane").click(function(){
+	var count=30;
+// The count starts here
+
 	computerChoice = Math.floor(Math.random()*100);
 	if(computerChoice < 5){
 		computerChoice = "Diamond";
